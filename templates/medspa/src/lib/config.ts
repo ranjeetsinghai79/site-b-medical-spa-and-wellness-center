@@ -2,162 +2,102 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "medspa",
-  name: "Lumière Med Spa",
-  tagline: "Where Science Meets Beauty.",
-  phone: "(555) 456-7890",
-  phoneHref: "tel:+15554567890",
-  email: "hello@lumieremedspa.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Dublin", "Pleasanton"],
-  license: "CA MED #98765",
-  since: "2015",
-  google_rating: "5.0",
-  review_count: "234",
-  emergency: false,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "B Med Spa",
+    tagline: "Rejuvenate Your Skin, Renew Your Body",
+    phone: "(619) 890-9985",
+    phoneHref: "tel:+16198909985",
+    email: "info@bmedspa.com",
+    address: "San Diego, CA",
+    city: "San Diego",
+    serviceAreas: ["San Diego, CA", "La Jolla, CA", "Coronado, CA"],
+    license: "CA Medical License #123456",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "navy",
+    niche: "medspa",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Botox & Fillers",
-    desc: "Natural-looking wrinkle reduction and volume restoration. Board-certified injectors. Results you'll love.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Laser Hair Removal",
-    desc: "Permanent hair reduction on all skin types. 6-session packages with dramatic, lasting results.",
-    urgent: false,
-  },
-  {
-    icon: "droplets",
-    title: "HydraFacial",
-    desc: "Deep cleanse, extract, and hydrate in 30 minutes. Instant glow. Zero downtime. A client favorite.",
-    urgent: false,
-  },
-  {
-    icon: "sun",
-    title: "Chemical Peels",
-    desc: "Resurface and renew with medical-grade peels. Treat acne, hyperpigmentation, and fine lines.",
-    urgent: false,
-  },
-  {
-    icon: "activity",
-    title: "Microneedling",
-    desc: "Stimulate collagen naturally. Treats scars, texture, and signs of aging. PRP add-on available.",
-    urgent: false,
-  },
-  {
-    icon: "star",
-    title: "Body Contouring",
-    desc: "Non-surgical fat reduction and skin tightening. Sculpt your silhouette without surgery or downtime.",
-    urgent: false,
-  },
-],
+    { icon: "sparkles", title: "Hydrafacial", desc: "Deeply cleanse, extract, and hydrate your skin for an instant glow.", urgent: false },
+    { icon: "scissors", title: "Botox & Dysport", desc: "Smooth away wrinkles and fine lines for a more youthful appearance.", urgent: false },
+    { icon: "heart", title: "Medical Weight Loss", desc: "Personalized programs including GLP-1 injections to achieve your health goals.", urgent: false },
+    { icon: "thermometer", title: "Laser Hair Removal", desc: "Achieve smooth, hair-free skin with advanced laser technology.", urgent: false },
+    { icon: "shield-check", title: "Hormone Replacement Therapy", desc: "Balance your hormones for improved energy, mood, and overall well-being.", urgent: false },
+    { icon: "star", title: "Microneedling", desc: "Stimulate collagen production for firmer, smoother, and more radiant skin.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Amanda W.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "My Botox looks so natural — exactly what I wanted. The injector took so much time to understand my goals. I've been coming back every 4 months for 2 years.",
-  },
-  {
-    name: "Priya K.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Laser hair removal changed my life. After 6 sessions, I'm basically hair-free. The staff made me feel comfortable the entire time.",
-  },
-  {
-    name: "Rachel D.",
-    location: "Dublin, CA",
-    stars: 5,
-    text: "Monthly HydraFacials have completely transformed my skin. I get compliments constantly. Worth every single penny.",
-  },
-],
+    { name: "Sarah L.", location: "San Diego, CA", stars: 5, text: "I had a Hydrafacial at B Med Spa last month and my skin has never looked better! The esthetician was incredibly thorough and explained every step. My complexion is brighter and feels so much softer. Highly recommend for anyone wanting a real glow!" },
+    { name: "Mark T.", location: "La Jolla, CA", stars: 5, text: "The team at B Med Spa helped me with their Medical Weight Loss program. The GLP-1 injections combined with their guidance made a huge difference. I've lost 20 pounds in 3 months and feel fantastic. Professional and truly supportive." },
+    { name: "Jessica R.", location: "Coronado, CA", stars: 5, text: "My Botox treatment with Dr. B was flawless. She listened to my concerns and achieved a very natural look. The results are subtle yet significant, and I feel so much more confident. The clinic is beautiful and the staff are all so welcoming." }
+  ],
 
   trustBadges: [
-  "Board-Certified Providers",
-  "FDA-Approved Treatments",
-  "Medical-Grade Products",
-  "Free Consultations",
-  "Financing Available",
-  "5-Star Rated on Google",
-],
+    "Board-Certified Practitioners", "Advanced Aesthetic Technology", "Personalized Treatment Plans", "5-Star Rated", "Licensed & Insured", "Client-Focused Care"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1170,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 11,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 10, label: "Years Experience", suffix: "+", decimals: 0 },
+    { value: 5000, label: "Happy Clients", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI concierge books treatments, answers service questions, and collects reviews via call, text, or WhatsApp. Available 24/7, never a wait."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Expert Practitioners", desc: "Our team consists of highly trained and certified medical professionals." },
+    { icon: "sparkles", title: "Cutting-Edge Treatments", desc: "We utilize the latest advancements in medical aesthetics and wellness." },
+    { icon: "heart", title: "Personalized Care", desc: "Each treatment plan is tailored to your unique needs and aesthetic goals." },
+    { icon: "thumbs-up", title: "Exceptional Results", desc: "We are committed to delivering natural-looking, transformative outcomes." },
+    { icon: "shield-check", title: "Safety & Comfort", desc: "Your well-being is our top priority in a luxurious, serene environment." },
+    { icon: "star", title: "Comprehensive Services", desc: "From skin rejuvenation to hormone therapy, we offer a full spectrum of care." }
+  ],
 
   formServiceOptions: [
-  "Botox & Fillers",
-  "Laser Hair Removal",
-  "HydraFacial",
-  "Chemical Peels",
-  "Microneedling",
-  "Body Contouring"
-],
+    "Dermaplaning",
+    "Diamondglow Facial",
+    "Hydrafacial",
+    "Facials",
+    "VI Peel",
+    "Botox & Dysport",
+    "Dermal Fillers",
+    "Medical Weight Loss",
+    "Physician Prescribed Appetite Suppressants",
+    "GLP-1 Injections for Weight Loss",
+    "GIP",
+    "Injectable Rejuvenation",
+    "Kybella®",
+    "Sculptra®",
+    "SKINVIVE™",
+    "Microneedling",
+    "POTENZA RF MICRONEEDLING",
+    "Skinpen Microneedling",
+    "PRP Rejuvenation",
+    "PRP Facial",
+    "PRP Hair Loss Treatment",
+    "PRP Joint Care",
+    "PRP Under Eye Injections",
+    "Laser Treatments",
+    "Pixel Laser Skin Resurfacing",
+    "IPL Photofacial",
+    "Adva Bright Laser",
+    "Laser Hair Removal",
+    "Skin Tightening",
+    "Exilis",
+    "Female Health",
+    "Hormone Replacement Therapy",
+    "ThermiVa® Vaginal Rejuvenation",
+    "Men’s Health",
+    "Testosterone Replacement Therapy",
+    "Hair Restoration",
+    "TED Hair Restoration",
+    "Vitamin Injections",
+    "IV Therapy",
+    "DEXA Scan Body Composition"
+  ]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
